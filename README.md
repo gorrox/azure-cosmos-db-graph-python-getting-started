@@ -18,15 +18,14 @@ Azure Cosmos DB is a globally distributed multi-model database. One of the suppo
   * [Python Driver for Gremlin](https://github.com/apache/tinkerpop/tree/master/gremlin-python)
 
 
-* Then, clone this repository using `git clone https://github.com/Azure-Samples/azure-cosmos-db-graph-python-getting-started.git`
+* Then, clone this repository using `git clone https://github.com/gorrox/azure-cosmos-db-graph-python-getting-started.git`
 
 * Next, substitute the endpoint and authorization key in the `connect.py`, on line 105, with your Cosmos DB account's values:
 
 ```python
 client = client.Client('wss://<YOUR_ENDPOINT>:443/','g', 
             username="/dbs/<YOUR_DATABASE>/colls/<YOUR_COLLECTION_OR_GRAPH>", 
-            password="<YOUR_PASSWORD>",
-            message_serializer=serializer.GraphSONSerializersV2d0()
+            password="<YOUR_PASSWORD>"
         )
 ```
 
